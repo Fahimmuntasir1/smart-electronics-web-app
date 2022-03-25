@@ -1,0 +1,24 @@
+.cart {
+  position: sticky;
+  color: white;
+}
+.cart button {
+  padding: 10px 17px;
+  border: none;
+  margin-bottom: 10px;
+  color: white;
+}
+.choose-btn {
+  background-color: rgba(255, 255, 255, 0.404);
+  transition: 0.4s;
+}
+.choose-btn:hover {
+  background-color: rgba(51, 255, 78, 0.952);
+}
+.reset-btn {
+  background-color: rgba(255, 255, 255, 0.432);
+  transition: 0.4s;
+}
+.reset-btn:hover {
+  background-color: rgb(255, 0, 0);
+}

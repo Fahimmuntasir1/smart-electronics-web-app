@@ -1,0 +1,19 @@
+.products-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 95%;
+  margin: auto;
+  position: relative;
+}
+.single-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width: 320px;
+  border-radius: 7px;
+}
+.cart {
+  background-color: #ff6200b7;
+  position: sticky;
+  top: 0;
+}
