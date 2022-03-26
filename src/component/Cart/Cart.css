@@ -1,5 +1,5 @@
 .cart {
-  position: sticky;
+  /* position: sticky; */
   color: white;
 }
 .cart button {
@@ -7,6 +7,22 @@
   border: none;
   margin-bottom: 10px;
   color: white;
+}
+.cart img {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+.price-txt {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 5px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
 }
 .choose-btn {
   background-color: rgba(255, 255, 255, 0.404);

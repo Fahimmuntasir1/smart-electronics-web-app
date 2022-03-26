@@ -5,20 +5,57 @@ import "./Products.css";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
+  const [accessories, setAccessories] = useState([]);
+  const [randomCart, setRandomCart] = useState([]);
+  console.log(randomCart);
   useEffect(() => {
     fetch("products.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+  const handleAddToCart = (singleProduct) => {
+    const newCart = [...accessories, singleProduct];
+    if (newCart.length <= 4) {
+      setAccessories(newCart);
+    } else {
+      alert("You can not add more item");
+    }
+  };
+  const randomGenarator= ()=>{
+    const random=Math.floor(Math.random()*accessories.length)
+    setRandomCart(accessories[random]);
+  }
+  const reset=()=>{
+    setAccessories([])
+  }
   return (
     <div className="products-container">
       <div className="single-product">
         {products.map((product) => (
-          <Product key={product.id} product={product}></Product>
+          <Product
+            key={product.id}
+            handleAddToCart={handleAddToCart}
+            product={product}
+          ></Product>
         ))}
       </div>
-      <div className="cart">
-        <Cart></Cart>
+      <div>
+        <div className="cart">
+          <h1>Selected Items</h1>
+          {accessories.map((item) => (
+            <Cart key={item.id} item={item}></Cart>
+          ))}
+          <button onClick={randomGenarator} className="choose-btn">
+            Choose One
+          </button>
+          <br />
+          <button onClick={reset} className="reset-btn">
+            Reset
+          </button>
+          <div>
+            <p>{randomCart.name}</p>
+          </div>
+        </div>
       </div>
     </div>
   );
