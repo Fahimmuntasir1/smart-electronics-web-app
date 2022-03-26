@@ -39,7 +39,7 @@ const Products = () => {
           ></Product>
         ))}
       </div>
-      <div>
+      <div className="cart-section">
         <div className="cart">
           <h1>Selected Items</h1>
           {accessories.map((item) => (

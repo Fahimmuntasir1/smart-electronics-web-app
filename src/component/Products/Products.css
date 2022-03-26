@@ -22,7 +22,39 @@
   padding: 10px;
   border-top: 1px solid #ffffff9d;
 }
-.random-product img{
+.random-product img {
   width: 100px;
   height: 100px;
 }
+
+@media only screen and (max-width: 667px) {
+  /*Big smartphones [426px -> 600px]*/
+  .products-container {
+    grid-template-columns: 1fr;
+  }
+  .single-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .cart-section {
+    order: 1;
+  }
+  .single-product {
+    order: 2;
+  }
+}
+
+/* @media screen and(max-width:678px) {
+  .products-container{
+    background-color: red;
+  }
+} */
+
+/* @media screen and(max-width:600px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    background-color: red;
+  }
+  .single-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
+} */
