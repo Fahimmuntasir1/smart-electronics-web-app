@@ -21,13 +21,13 @@ const Products = () => {
       alert("You can not add more item");
     }
   };
-  const randomGenarator= ()=>{
-    const random=Math.floor(Math.random()*accessories.length)
+  const randomGenarator = () => {
+    const random = Math.floor(Math.random() * accessories.length);
     setRandomCart(accessories[random]);
-  }
-  const reset=()=>{
-    setAccessories([])
-  }
+  };
+  const reset = () => {
+    setAccessories([]);
+  };
   return (
     <div className="products-container">
       <div className="single-product">
@@ -52,8 +52,12 @@ const Products = () => {
           <button onClick={reset} className="reset-btn">
             Reset
           </button>
-          <div>
-            <p>{randomCart.name}</p>
+          <div className="random-product">
+              <img src={randomCart.img} alt=""></img>
+            <div>
+              <p>{randomCart.price}</p>
+              <p>{randomCart.name }</p>
+            </div>
           </div>
         </div>
       </div>

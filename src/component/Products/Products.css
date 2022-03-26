@@ -18,3 +18,11 @@
   position: sticky;
   top: 0;
 }
+.random-product {
+  padding: 10px;
+  border-top: 1px solid #ffffff9d;
+}
+.random-product img{
+  width: 100px;
+  height: 100px;
+}
