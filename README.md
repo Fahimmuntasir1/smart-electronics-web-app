@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Smart Electronics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+click here to privet repo link[Privet Repo Link](https://github.com/Programming-Hero-Web-Course4/lucky-one-Fahimmuntasir1).
+
+Live site link[https://smart-electronics.netlify.app/](https://smart-electronics.netlify.app/).
 
 ## Available Scripts
 
